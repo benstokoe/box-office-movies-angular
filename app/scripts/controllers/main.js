@@ -13,12 +13,6 @@ angular.module('boxOfficeMoviesAngularApp')
     var responsePromise = $http.jsonp('http://api.rottentomatoes.com/api/public/v1.0/lists/movies/box_office.json?apikey=7jyadrpxu7fpa8xmtzgfghfx&callback=JSON_CALLBACK');
 
     responsePromise.success(function(data) {
-      console.log(data);
+      $scope.movies = data.movies;
     });
-
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
   });
