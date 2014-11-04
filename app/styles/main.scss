@@ -90,3 +90,40 @@ body {
     border-bottom: 0;
   }
 }
+
+.movie-grid {
+  $movie_width: 175px;
+
+  ul {
+    padding: 0;
+  }
+
+  .movie-info {
+    background-color: #34495e;
+    max-width: $movie_width;
+    padding: 10px;
+    color: #fff;
+
+    .rating {
+      font-size: 12px;
+      display: block;
+    }
+  }
+  .title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0;
+    font-weight: bold;
+  }
+
+  .movie {
+    margin-bottom: 20px;
+
+    .poster {
+      width: $movie_width;
+      height: 215px;
+      overflow: hidden;
+    }
+  }
+}
